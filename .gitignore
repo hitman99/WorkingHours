@@ -41,3 +41,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+############### CUSTOM ignores #################
+.svn
+.svn/*
+nbproject
+.gitignore
+Makefile

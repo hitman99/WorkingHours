@@ -1,0 +1,171 @@
+h1 {color:red}
+p {color:blue}
+body {background-color: black; margin: 0; padding: 0; text-align: center; height: 100%; width: 100%; font-family: Consolas; }
+@media screen and (min-width : 321px) {
+   
+    #wrapper {
+        width: 530px;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    #header {
+        font-size: 30px;
+        font-weight: bold;
+        font-family:  Gill Sans / Gill Sans MT, sans-serif; 
+        color: white;
+        text-align: center;
+    }
+    #timeout-message {
+        font-size: 85px;
+        font-weight: bold;
+        font-family:  Gill Sans / Gill Sans MT, sans-serif; 
+        color: white;
+        text-align: center;
+    }
+    #timer {
+        display: none;
+    }
+    #settings {
+        /*text-align: left;*/
+        width: 400px;
+        margin-left: 65px;
+        display: none;
+    }
+    .two.fields > .field > label{
+        font-size: 20px;
+    }
+    .big_number_wrapper { float: left; width: 175px;  padding-bottom: 3px; text-align: center; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; }
+    .big_number { border-bottom: 2px solid red; font-weight: bold; /*width: 80px;*/ font-size: 90px; font-family: Courier New, monospace; color: white; text-align: center; letter-spacing: -0.1ex; margin-left: 5px; margin-right: 5px; height: 100px;}
+    .settings-button, .language-button {
+        font-size: 1rem !important;
+    }
+    .save-settings-button {
+        font-size: 1rem !important;
+    }
+}
+@media screen and (min-width : 900px) {
+   
+     #wrapper {
+        width: 890px;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    #header {
+        font-size: 50px;
+        font-weight: bold;
+        font-family:  Gill Sans / Gill Sans MT, sans-serif; 
+        color: white;
+        text-align: center;
+    }
+    #timeout-message {
+        font-size: 150px;
+        font-weight: bold;
+        font-family:  Gill Sans / Gill Sans MT, sans-serif; 
+        color: white;
+        text-align: center;
+    }
+    #timer {
+        display: none;
+    }
+    #settings {
+        /*text-align: left;*/
+        width: 700px;
+        margin-left: 85px;
+        display: none;
+    }
+    .two.fields > .field > label{
+        font-size: 25px;
+    }
+
+    .big_number_wrapper { float: left; width: 270px;  padding-bottom: 3px; text-align: center; font-size: 20px; letter-spacing: 10px; text-transform: uppercase; }
+    .big_number_wrapper.hours { width: 350px; }
+    .big_number { border-bottom: 2px solid red; font-weight: bold; /*width: 250px;*/ font-size: 150px; font-family: Courier New, monospace; color: white; text-align: center; letter-spacing: -0.2ex; margin-left: 10px; margin-right: 10px; height: 165px; }
+    .settings-button, .language-button {
+        font-size: 1.2rem !important;
+    }
+    .save-settings-button {
+        font-size: 1rem !important;
+    }
+}
+@media screen and (min-width : 1300px)  {
+    
+    #wrapper {
+        width: 890px;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    #header {
+        font-size: 50px;
+        font-weight: bold;
+        font-family:  Gill Sans / Gill Sans MT, sans-serif; 
+        color: white;
+        text-align: center;
+    }
+    #timeout-message {
+        font-size: 150px;
+        font-weight: bold;
+        font-family:  Gill Sans / Gill Sans MT, sans-serif; 
+        color: white;
+        text-align: center;
+    }
+    #timer {
+        display: none;
+    }
+    #settings {
+        /*text-align: left;*/
+        width: 700px;
+        margin-left: 85px;
+        display: none;
+    }
+    .two.fields > .field > label{
+        font-size: 25px;
+    }
+
+    .big_number_wrapper { float: left; width: 270px;  padding-bottom: 3px; text-align: center; font-size: 20px; letter-spacing: 10px; text-transform: uppercase; }
+    .big_number_wrapper.hours { width: 350px; }
+    .big_number { border-bottom: 2px solid red; font-weight: bold; /*width: 250px;*/ font-size: 200px; font-family: Courier New, monospace; color: white; text-align: center; letter-spacing: -0.2ex; margin-left: 10px; margin-right: 10px; height: 195px; }
+    .settings-button, .language-button {
+        font-size: 0.71rem !important;
+    }
+}
+.big_number_wrapper .name {text-align: center; color: white; }
+footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        color: #FF440E;
+        margin-bottom: 5px;
+        font-family: 'Georgia';
+        font-size: 15px;
+}
+footer a {
+        color: #0F8ACC;
+        text-decoration: none;
+}
+footer a:hover {
+        text-decoration: underline;
+}
+.settings-buttons {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    /*display: none !important;*/
+}
+.ui.huge.input > input {
+    text-align: center;
+    /*width: 300px;*/
+}
