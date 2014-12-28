@@ -143,10 +143,6 @@
             // Darbas jau baigesi
             if((dateInTheFuture.getTime() - dateNow.getTime()) < 0){
                 dateInTheFuture.setHours(parseInt(openingHours[0]),parseInt(openingHours[1]),parseInt(openingHours[2]),0);
-                var currentWeekday = (dateInTheFuture.getDay() == 0 ? 7 : dateInTheFuture.getDay()); // Prakeiktas formatas, kai 0 reiškia sekmadienį :|
-                if(currentWeekday >= 5){
-                    dateInTheFuture.setDate(dateInTheFuture.getDate() + (7 - currentWeekday));
-                }
                 dateInTheFuture.setDate(dateInTheFuture.getDate() + 1);
                 title_message = 'time_after_cob_message';
             }
@@ -156,6 +152,10 @@
         }
         else{
             title_message = 'time_after_cob_message';
+        }
+        var currentWeekday = (dateInTheFuture.getDay() == 0 ? 7 : dateInTheFuture.getDay()); // Prakeiktas formatas, kai 0 reiškia sekmadienį :|
+        if(currentWeekday >= 5){
+            dateInTheFuture.setDate(dateInTheFuture.getDate() + (7 - currentWeekday));
         }
         $('#header').text(t(title_message));
     }
